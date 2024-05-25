@@ -29,8 +29,8 @@ var particles = [];
 var indices = [];
 var imgIndex = 0;
 var drawType = 1;
-var particleCount = 800;
-var maxSize = 150;
+var particleCount = 500;
+var maxSize = 200;
 var img;
 
 function setup() {
