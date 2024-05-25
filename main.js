@@ -23,7 +23,7 @@ const DrawTypes = {
 	Triangle: 2
 };
 
-var imgNames = ["img/1CC.png"];
+var imgNames = ["img/1CC.png","3CC"];
 
 var particles = [];
 var indices = [];
@@ -36,7 +36,7 @@ var img;
 function setup() {
 	let canvas = createCanvas(windowWidth, windowHeight);
 	canvas.canvas.oncontextmenu = () => false;
-	loadImg(imgNames["img/1CC.png"]);
+	loadImg(imgNames[0]);
 }
 
 function draw() {
