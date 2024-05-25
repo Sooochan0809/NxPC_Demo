@@ -23,7 +23,7 @@ const DrawTypes = {
 	Triangle: 2
 };
 
-var imgNames = ["img/chara_ui","img/1CC.png","img/2DRD.png","img/3CC.png"];
+var imgNames = ["img/chara_ui.png","img/1CC.png","img/2DRD.png","img/3CC.png"];
 
 var particles = [];
 var indices = [];
