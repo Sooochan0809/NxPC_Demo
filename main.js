@@ -15,7 +15,7 @@ const MAX_FORCE = 0.6;
 const REPULSION_RADIUS = 100;
 const REPULSION_STRENGTH = 0.25;
 const IMG_RESIZED_WIDTH = 500;
-const IMG_SCAN_STEPS = 50;
+const IMG_SCAN_STEPS = 1;
 
 const DrawTypes = {
 	Rect: 0,
