@@ -29,8 +29,8 @@ var particles = [];
 var indices = [];
 var imgIndex = 0;
 var drawType = 1;
-var particleCount = 500;
-var maxSize = 200;
+var particleCount = 800;
+var maxSize = 150;
 var img;
 
 function setup() {
@@ -63,7 +63,7 @@ function draw() {
 	push();
 	translate(width / 2 - img.width / 2, height / 2 - img.height / 2);
 	
-	fill(255);
+	fill(0,0,255);
 	noStroke();
 	
 	rectMode(CENTER);
