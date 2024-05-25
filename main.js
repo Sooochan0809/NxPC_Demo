@@ -36,7 +36,7 @@ var img;
 function setup() {
 	let canvas = createCanvas(windowWidth, windowHeight);
 	canvas.canvas.oncontextmenu = () => false;
-	loadImg(imgNames[0]);
+	loadImg(imgNames["img/1CC.png"]);
 }
 
 function draw() {
