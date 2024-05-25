@@ -6,8 +6,8 @@ twitter.com/russetPotato
 */
 
 const SPIN_MULTIPLIER = 45;
-const MIN_PARTICLE_COUNT = 400;
-const MAX_PARTICLE_COUNT = 1000;
+const MIN_PARTICLE_COUNT = 500;
+const MAX_PARTICLE_COUNT = 1500;
 const MIN_PARTICLE_SIZE = 12;
 const MAX_PARTICLE_SIZE = 50;
 const MIN_FORCE = 0.4;
@@ -15,7 +15,7 @@ const MAX_FORCE = 0.6;
 const REPULSION_RADIUS = 100;
 const REPULSION_STRENGTH = 0.25;
 const IMG_RESIZED_WIDTH = 500;
-const IMG_SCAN_STEPS = 2;
+const IMG_SCAN_STEPS = 10;
 
 const DrawTypes = {
 	Rect: 0,
