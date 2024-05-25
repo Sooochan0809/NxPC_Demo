@@ -41,7 +41,7 @@ function setup() {
 
 function draw() {
 	background(0, 0, 255);
-	fill(255);
+	fill(0,0,255);
 	noStroke();
 	text(
 		`
