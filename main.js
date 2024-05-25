@@ -41,7 +41,7 @@ function setup() {
 
 function draw() {
 	background(255);
-	fill(255);
+	fill(0,0,255);
 	noStroke();
 	text(
 		`
@@ -63,7 +63,7 @@ function draw() {
 	push();
 	translate(width / 2 - img.width / 2, height / 2 - img.height / 2);
 	
-	fill(255);
+	fill(0,0,255);
 	noStroke();
 	
 	rectMode(CENTER);
