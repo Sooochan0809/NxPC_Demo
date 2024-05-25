@@ -675,12 +675,3 @@
   letter-spacing: 0;
   line-height: normal;
 }
-
-/* styles.css */
-body {
-  background-color: rgb(3, 15, 243); /* ここで背景色を設定します */
-  color: #333; /* テキストの色も変更できます */
-  font-family: Arial, sans-serif; /* フォントの設定 */
-  margin: 0; /* ブラウザのデフォルトの余白をリセット */
-  padding: 0; /* ブラウザのデフォルトのパディングをリセット */
-}
