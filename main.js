@@ -40,7 +40,7 @@ function setup() {
 }
 
 function draw() {
-	background(0, 0, 255);
+	background(255);
 	fill(0,0,255);
 	noStroke();
 	text(
