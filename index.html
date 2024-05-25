@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  <style>
+    .frame ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    .frame ul li {
+      margin-right: 20px;
+    }
+
+    .text-wrapper-8 {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+    }
+
+    #map {
+      height: 500px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="desk-top" id=desk-top>
+      <div class="overlap">
+        <div class="body">
+          <div class="performer" id=performer>
+            <div class="text-wrapper">Performer</div>
+            <div class="view">
+              <div class="rectangle"></div>
+              <div class="div"></div>
+              <div class="rectangle-2"></div>
+              <div class="rectangle-3"></div>
+              <div class="rectangle-4"></div>
+            </div>
+            <div class="view-2">
+              <div class="rectangle-5"></div>
+              <div class="rectangle-6"></div>
+              <div class="rectangle-7"></div>
+              <div class="rectangle-8"></div>
+              <div class="rectangle-9"></div>
+              <div class="div"></div>
+            </div>
+          </div>
+          <div class="timetable" id=timetable>
+            <div class="overlap-group">
+              <div class="schedule-wrapper">
+                <div class="schedule">
+                  <div class="rhythmos-trekkers">
+                    <img class="line" src="img/line-3-4.svg" />
+                    <p class="text-wrapper-2">
+                      18:40 ~　Rhythmos Trekkers <br />　　　　　[Fushi Sano,たかギッシュ39<br />　　　　　
+                      横揺れそーちゃん,ニチ門司ゴン次郎]
+                    </p>
+                  </div>
+                  <div class="nomad-sentinel">
+                    <img class="img" src="img/line-3-4.svg" />
+                    <div class="text-wrapper-2">18:10 ~　Nomad Sentinel [BlackRat,Syoronpo]</div>
+                  </div>
+                  <div class="view-3">
+                    <img class="img" src="img/line-3-4.svg" />
+                    <div class="text-wrapper-2">17:40 ~　ニチウシオーハシ [早田,牛尾,大橋]</div>
+                  </div>
+                  <div class="game-center">
+                    <img class="img" src="img/line-3-4.svg" />
+                    <div class="text-wrapper-2">17:10 ~　GameCenter (奥野細道,小籠包,京野菜)</div>
+                  </div>
+                  <div class="open">
+                    <img class="img" src="img/line-3-4.svg" />
+                    <div class="text-wrapper-2">17:00 ~　Open</div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-wrapper-3">Timetable</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="overlap-2">
+              <div class="rectangle-10">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.5201641935428!2d136.6370136757738!3d35.367552772690104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003b3c7cf25fe9d%3A0x85a8c98336d432fd!2z5oOF5aCx56eR5a2m6Iq46KGT5aSn5a2m6Zmi5aSn5a2m!5e0!3m2!1sja!2sjp!4v1716227994090!5m2!1sja!2sjp"
+                  width="600" height="370" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="group">
+                <p class="element-sat">
+                  <span class="span">会場：<br /></span>
+                  <span class="text-wrapper-4">〒503-0006 <br />岐阜県大垣市加賀野４丁目１−７<br />情報科学芸術大学院大学センタービル3階<br /></span>
+                  <span class="span">開催日時：<br /></span>
+                  <span class="text-wrapper-4">6/15(Sat)<br />17:00 ~ 21:00</span>
+                </p>
+                <div class="text-wrapper">Info</div>
+              </div>
+            </div>
+          </div>
+          <div class="about" id=about>
+            <div class="group-2">
+              <div class="text-wrapper">About</div>
+              <div class="nxpc-lab-nxpc-live">
+                NxPC.Labは、クラブやライブにおけるアーティストと観客の相互作用によってもたらされる場の臨場感<br />を拡大し、ネットへも拡散させるためのメディアテクノロジーの実現を目指した研究機関です。
+                現代の<br />ディア体験において必要とされる対話性、参加性をデバイス、インタフェース、ネットワークといった<br />メディアテクノロジーを駆使することで、音楽体験を拡張し、音楽空間におけるコミュニケーションを<br />次のステージへ導くための研究開発、イベントを実施しています。実験の場としてのイベントNxPC.Live<br />を中心に、レクチャーやワークショップ、ネットラジオなどの活動を行っています。
+              </div>
+            </div>
+          </div>
+          <div class="upcoming-event">
+            <div class="div-wrapper">
+              <!-- <div class="text-wrapper-5">Upcoming Event</div> -->
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="SNS-icon">
+            <a href=https://twitter.com/nxpclab><img class="logo-black" src="img/logo-black-1.png" /></a>
+            <a href=https://www.youtube.com/@nxpclab><img class="yt-icon-mono-light"
+                src="img/yt-icon-mono-light-1.png" /></a>
+            <a href=https://www.instagram.com/nxpc.lab?igsh><img class="instagram-glyph"
+                src="img/instagram-glyph-black-1.png" /></a>
+          </div>
+          <div class="nx-PC">
+            <p class="p">Next dimension Plural media Club experience. Laboratory</p>
+            <div class="text-wrapper-6">contact@nxpclab.info</div>
+            <div class="text-wrapper-7">NxPC.Lab</div>
+            <img class="image" src="img/image-1.png" />
+          </div>
+          <div class="navi">
+            <div class="overlap-group-2">
+              <div class="frame">
+                <ul>
+                  <li><a href="#desk-top">
+                      <div class="text-wrapper-8">Top</div>
+                    </a></li>
+                  <li><a href="#about">
+                      <div class="text-wrapper-8">About</div>
+                    </a></li>
+                  <li><a href="#timetable">
+                      <div class="text-wrapper-8">Timetable</div>
+                    </a></li>
+                  <li><a href="#performer">
+                      <div class="text-wrapper-8">Performer</div>
+                    </a></li>
+                </ul>
+              </div>
+              <div class="lines">
+                <img class="line-2" src="img/line-2.svg" /> <img class="line-3" src="img/line-2.svg" />
+              </div>
+            </div>
+          </div>
+        </footer>
+        <header class="header">
+          <div class="overlap-3">
+            <div class="rectangle-11"></div>
+            <img class="logo" src="img/logo-1.png" />
+
+            <div class="navbar">
+                <ul>
+                  <li><a href="#desk-top">
+                      <div class="text-wrapper-8">Top
+                      </div>
+                    </a></li>
+                </ul>
+                <ul>
+                  <li><a href="#about">
+                      <div class="text-wrapper-8">About</div>
+                    </a></li>
+                </ul>
+                <ul>
+                  <li><a href="#timetable">
+                      <div class="text-wrapper-8">Timetable</div>
+                    </a></li>
+                </ul>
+                <ul>
+                  <li><a href="#performer">
+                      <div class="text-wrapper-8">Performer</div>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="text-wrapper-10">NxPC.Lab</div>
+        </header>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<html lang="ja">
+<script>
+  //音声再生の実装
+  document.addEventListener('DOMContentLoaded', function () {
+    function playClickSound() {
+      var audio = new Audio('sounds/click-sound.mp3');
+      //音声を再生する
+      audio.play();
+    }
+    //ドキュメント全体に対して、クリック時にplayClickSound関数を呼び出すイベントリスナーを追加する
+    document.addEventListener('click', playClickSound);
+  });
+
+  //ページ内ショートカットの実装
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
+
+</html>
