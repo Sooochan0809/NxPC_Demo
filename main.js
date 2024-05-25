@@ -7,15 +7,15 @@ twitter.com/russetPotato
 
 const SPIN_MULTIPLIER = 45;
 const MIN_PARTICLE_COUNT = 500;
-const MAX_PARTICLE_COUNT = 1000;
+const MAX_PARTICLE_COUNT = 1500;
 const MIN_PARTICLE_SIZE = 6;
-const MAX_PARTICLE_SIZE = 25;
+const MAX_PARTICLE_SIZE = 100;
 const MIN_FORCE = 0.4;
 const MAX_FORCE = 0.6;
 const REPULSION_RADIUS = 100;
 const REPULSION_STRENGTH = 0.25;
 const IMG_RESIZED_WIDTH = 500;
-const IMG_SCAN_STEPS = 10;
+const IMG_SCAN_STEPS = 50;
 
 const DrawTypes = {
 	Rect: 0,
